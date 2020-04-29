@@ -9,7 +9,7 @@ var methodOverride = require("method-override"),
 	mongoose.set('useFindAndModify', false);
 	mongoose.set("useUnifiedTopology", true);
 	mongoose.set('useNewUrlParser', true);
-	mongoose.connect("mongodb://localhost/rest_blog_app");
+	mongoose.connect("mongodb://mongo-db/rest_blog_app");
 	
 	app.set("view engine","ejs");
 	app.use(bodyParser.urlencoded({extended:true}));
