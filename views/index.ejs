@@ -9,6 +9,7 @@
 						<div class="ui fluid card">
 							<div class="content">
 								<a class="header" href="/blog/<%= blog._id %>"><%= blog.title %></a>
+								<span><%= blog.date.toDateString()%></span>
 								<div class="description">
       									<%= blog.body %>
     							</div>
